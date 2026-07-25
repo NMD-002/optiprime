@@ -363,22 +363,58 @@ const leadership = [
     { name: "Hugh", role: "Co-Lead (Operations)" },
     { name: "Yuen Tao", role: "Sub-Team Lead (UAV)" },
     { name: "Fabian", role: "Sub-Team Lead (UUV)" },
-    { name: "Wei Lun", role: "Sub-Team Lead (USV)" },
+    { name: "Ng Wei Lun", role: "Sub-Team Lead (USV)" },
     { name: "Alexi", role: "Integration Lead" },
 ];
 
-const teamCredits = [
+const teamCredits: Array<{
+    division: string;
+    members: Array<{ name: string; role?: string }>;
+}> = [
     {
         division: "UAV",
-        members: ["Nigel", "Gen Yen", "Alicia", "Jarvis", "Glenda"],
+        members: [
+            { name: "Jarvis" },
+            { name: "Gen Yen" },
+            { name: "Ramonito" },
+            { name: "Alicia" },
+            { name: "Glenda" },
+            { name: "Xin Yue" },
+            { name: "Afzaal" },
+            { name: "Nigel Loke" },
+            { name: "Ting Hui" },
+            { name: "Muas" },
+            { name: "Gary" },
+        ],
     },
     {
         division: "USV",
-        members: ["More members to be added."],
+        members: [
+            { name: "Ng Wei Lun", role: "Sub-Team Lead" },
+            { name: "Chow Xiong Yong Hugh", role: "Engineer" },
+            { name: "Kwok Yan Shan", role: "Engineer" },
+            { name: "M Ganeshkumaar", role: "Engineer" },
+            { name: "Jaison Tan", role: "Engineer" },
+            { name: "Afzaal Vansanwala", role: "Engineer" },
+            { name: "Cheng Xi", role: "Engineer" },
+            { name: "Lai Hong Zhang", role: "Engineer" },
+            { name: "Matthias Chua", role: "Engineer" },
+            { name: "Alvin To Yie Kwan", role: "Engineer" },
+            { name: "Darryl Chan", role: "Engineer" },
+            { name: "Yan Ying", role: "Engineer" },
+        ],
     },
     {
         division: "UUV",
-        members: ["More members to be added."],
+        members: [
+            { name: "Fabian", role: "Sub-Team Lead" },
+            { name: "Aydil", role: "Engineer" },
+            { name: "Brian", role: "Engineer" },
+            { name: "Sherwin", role: "Engineer" },
+            { name: "Clifton", role: "Engineer" },
+            { name: "Alister", role: "Engineer" },
+            { name: "Zenon", role: "Engineer" },
+        ],
     },
 ];
 
@@ -655,10 +691,15 @@ export default function HomePage() {
                                         <ul className="grid gap-2">
                                             {group.members.map((member) => (
                                                 <li
-                                                    key={`${group.division}-${member}`}
-                                                    className="text-sm text-muted-foreground"
+                                                    key={`${group.division}-${member.name}`}
+                                                    className="flex flex-col gap-0.5 text-sm text-muted-foreground sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
                                                 >
-                                                    {member}
+                                                    <span>{member.name}</span>
+                                                    {member.role && (
+                                                        <span className="text-[10px] uppercase tracking-widest text-primary/80">
+                                                            {member.role}
+                                                        </span>
+                                                    )}
                                                 </li>
                                             ))}
                                         </ul>

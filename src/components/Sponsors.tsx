@@ -13,12 +13,12 @@ interface Sponsor {
 
 const sponsors: Sponsor[] = [
     {
-        id: "incose",
-        name: "INCOSE Foundation",
-        tier: "Systems engineering partner",
-        url: "https://www.incose.org",
-        logoSrc: "/asset/Blue-INCOSE-logo-on-white-background.png",
-        logoClass: "bg-white p-3",
+        id: "onr",
+        name: "Office of Naval Research",
+        tier: "Research sponsor",
+        url: "#",
+        logoSrc: "/asset/Office_of_Naval_Research_Official_Logo.png",
+        logoClass: "bg-white p-2",
     },
     {
         id: "alt_tab",
@@ -60,7 +60,7 @@ const sponsors: Sponsor[] = [
     },
     {
         id: "tgn",
-        name: "The Grit Nation",
+        name: "TGN Technology",
         tier: "Community sponsor",
         url: "#",
         logoSrc: "/asset/tgn.jpg",
