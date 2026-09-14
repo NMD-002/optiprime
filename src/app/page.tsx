@@ -39,7 +39,7 @@ interface Platform {
 const platforms: Platform[] = [
   {
     key: "uav",
-    name: "UAV",
+    name: "Buzz",
     fullname: "Unmanned Aerial Vehicle",
     tagline: "Aerial domain",
     description:
@@ -145,7 +145,7 @@ const platforms: Platform[] = [
   },
   {
     key: "usv",
-    name: "USV",
+    name: "Impavida",
     fullname: "Unmanned Surface Vehicle",
     tagline: "Surface domain",
     description:
@@ -251,7 +251,7 @@ const platforms: Platform[] = [
   },
   {
     key: "uuv",
-    name: "UUV",
+    name: "Riptide",
     fullname: "Unmanned Underwater Vehicle",
     tagline: "Subsurface domain",
     description:
