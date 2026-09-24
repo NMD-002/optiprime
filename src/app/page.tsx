@@ -358,13 +358,14 @@ const platforms: Platform[] = [
 ];
 
 const leadership = [
-  { name: "Calwin Ang", role: "General Lead" },
+  { name: "Calwin Ang Wei Xuan", role: "General Lead" },
   { name: "Carl Louis", role: "Co-Lead (Development)" },
-  { name: "Hugh", role: "Co-Lead (Operations)" },
-  { name: "Yuen Tao", role: "Sub-Team Lead (UAV)" },
-  { name: "Fabian", role: "Sub-Team Lead (UUV)" },
-  { name: "Ng Wei Lun", role: "Sub-Team Lead (USV)" },
-  { name: "Alexi", role: "Integration Lead" },
+  { name: "Chow Xiong Yong Hugh", role: "Co-Lead (Operations)" },
+  { name: "Nigel Loke Yue Yang", role: "Comms/Electrical Lead" },
+  { name: "Alexi Kizhakkepurathu George", role: "Integration Lead" },
+  { name: "Toh Jia Jun, Fabian", role: "Sub-Team Lead (UUV)" },
+  { name: "Jaison Tan Yann Hann", role: "Sub-Team Lead (USV)" },
+  { name: "Ng Yuen Tao", role: "Sub-Team Lead (UAV)" },
 ];
 
 const teamCredits: Array<{
@@ -374,46 +375,48 @@ const teamCredits: Array<{
   {
     division: "UAV",
     members: [
-      { name: "Jarvis" },
-      { name: "Gen Yen" },
-      { name: "Ramonito" },
-      { name: "Alicia" },
-      { name: "Glenda" },
-      { name: "Xin Yue" },
-      { name: "Afzaal" },
-      { name: "Nigel Loke" },
-      { name: "Ting Hui" },
-      { name: "Muas" },
-      { name: "Gary" },
+      { name: "Jarvis Leow Zhensheng", role: "Mechanical" }, //
+      { name: "Tan Gen Yen", role: "Mechanical" }, //
+      { name: "Ramonito Jhon Pines Wong", role: "Mechanical" }, //
+      { name: "Alicia Wong Yuan Qi", role: "Mechanical" }, //
+      { name: "Glenda Chong Yi Xuan", role: "Mechanical" }, //
+      { name: "Goh Xin Yue", role: "Mechanical" }, //
+      { name: "Nigel Loke Yue Yang", role: "Electrical" }, //
+      { name: "Muas Jabar Bin Abdullah", role: "software" }, //
+      { name: "Nicholas Wei Jian Chiang", role: "Advisor/Finance" },
     ],
   },
   {
     division: "USV",
     members: [
-      { name: "Ng Wei Lun", role: "Sub-Team Lead" },
-      { name: "Chow Xiong Yong Hugh", role: "Engineer" },
-      { name: "Kwok Yan Shan", role: "Engineer" },
-      { name: "M Ganeshkumaar", role: "Engineer" },
-      { name: "Jaison Tan", role: "Engineer" },
-      { name: "Afzaal Vansanwala", role: "Engineer" },
-      { name: "Cheng Xi", role: "Engineer" },
-      { name: "Lai Hong Zhang", role: "Engineer" },
-      { name: "Matthias Chua", role: "Engineer" },
-      { name: "Alvin To Yie Kwan", role: "Engineer" },
-      { name: "Darryl Chan", role: "Engineer" },
-      { name: "Yan Ying", role: "Engineer" },
+      { name: "Jaison Tan", role: "Sub-Team Lead" }, //
+      { name: "Ng Wei Lun", role: "Mechanical" }, //
+      { name: "Cheng Xi", role: "Mechanical" }, //
+      { name: "Alvin To Yie Kwan", role: "Software" }, //
+      { name: "Lua Yan Ying", role: "Mechanical" }, //
+      { name: "Matthias Chua Jia Jun", role: "Software" }, //
+      { name: "Dmitrii Aparin", role: "System Developer" }, //
     ],
   },
   {
     division: "UUV",
     members: [
-      { name: "Fabian", role: "Sub-Team Lead" },
-      { name: "Aydil", role: "Engineer" },
-      { name: "Brian", role: "Engineer" },
-      { name: "Sherwin", role: "Engineer" },
-      { name: "Clifton", role: "Engineer" },
-      { name: "Alister", role: "Engineer" },
-      { name: "Zenon", role: "Engineer" },
+      { name: "Fabian", role: "Sub-Team Lead" }, //
+      { name: "Aydil", role: "Software" }, //
+      { name: "Sherwin", role: "Software" }, //
+      { name: "Clifton", role: "Software" }, //
+      { name: "Yan Shan", role: "Software" }, //
+      { name: "Brian Ong Wei Rong ", role: "Mechanical" }, //
+    ],
+  },
+  {
+    division: "Staff",
+    members: [
+      { name: "Yun Mei Ang", role: "Advisor" },
+      { name: "Voon Ee How", role: "Advisor" },
+      { name: "Nicholas Wei Jian Chiang", role: "Advisor/Finance" },
+      { name: "Dmitrii Aparin", role: "USV Craft System Developer" },
+      { name: "Peng Cheng Wang", role: "Advisor" },
     ],
   },
 ];
