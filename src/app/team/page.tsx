@@ -1,7 +1,8 @@
 "use client";
 
 import { HeroSection } from "@/components/ui/hero-section";
-import { teamCredits, leadership } from "../page";
+import { teamCredits } from "../teamCredits";
+import { leadership } from "../leadership";
 import TeamSection from "./TeamSection";
 
 export default function Team() {
