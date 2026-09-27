@@ -8,7 +8,7 @@ export const leadership: Array<{
   {
     name: "Chow Xiong Yong Hugh",
     role: "Co-Lead (Operations)",
-    imageUrl: "/team/hughchow.jpg",
+    imageUrl: "/team/HughChow.jpg",
   },
   {
     name: "Nigel Loke Yue Yang",
