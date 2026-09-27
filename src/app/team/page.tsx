@@ -14,7 +14,9 @@ export default function Team() {
         <h1 className="mb-8 text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl">
           Our Team
         </h1>
-        <TeamSection team={{ members: leadership }}></TeamSection>
+        <TeamSection
+          team={{ division: "Leadership", members: leadership }}
+        ></TeamSection>
         {teamCredits.map((team, id) => (
           <TeamSection key={id} team={team} />
         ))}
