@@ -99,7 +99,11 @@ export const teamCredits: Array<{
     division: "Staff",
     members: [
       { name: "Yun Mei Ang", role: "Advisor" },
-      { name: "Voon Ee How", role: "Advisor" },
+      {
+        name: "Voon Ee How",
+        role: "Advisor",
+        imageUrl: "/team/Prof Bernard.jpg",
+      },
       {
         name: "Nicholas Wei Jian Chiang",
         role: "Advisor/Finance",
