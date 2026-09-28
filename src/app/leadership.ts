@@ -19,7 +19,11 @@ export const leadership: Array<{
     role: "Comms/Electrical Lead",
     imageUrl: "/team/NigelLoke.jpg",
   },
-  { name: "Alexi Kizhakkepurathu George", role: "Integration Lead" },
+  {
+    name: "Alexi Kizhakkepurathu George",
+    role: "Integration Lead",
+    imageUrl: "/team/alexi.png",
+  },
   {
     name: "Toh Jia Jun, Fabian",
     role: "Sub-Team Lead (UUV)",
