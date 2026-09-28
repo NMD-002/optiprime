@@ -3,7 +3,11 @@ export const leadership: Array<{
   role?: string;
   imageUrl?: string;
 }> = [
-  { name: "Calwin Ang Wei Xuan", role: "General Lead" },
+  {
+    name: "Calwin Ang Wei Xuan",
+    role: "General Lead",
+    imageUrl: "/team/calwin.png",
+  },
   { name: "Carl Louis", role: "Co-Lead (Development)" },
   {
     name: "Chow Xiong Yong Hugh",

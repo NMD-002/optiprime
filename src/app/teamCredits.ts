@@ -60,7 +60,11 @@ export const teamCredits: Array<{
         role: "Sub-Team Lead",
         imageUrl: "/team/JaisonTan.jpg",
       }, //
-      { name: "Ng Wei Lun", role: "Mechanical" }, //
+      {
+        name: "Ng Wei Lun",
+        role: "Mechanical",
+        imageUrl: "/team/NgWeiLun.jpg",
+      }, //
       { name: "Cheng Xi", role: "Mechanical", imageUrl: "/team/Cheng Xi.jpg" }, //
       {
         name: "Alvin To Yie Kwan",
@@ -83,11 +87,31 @@ export const teamCredits: Array<{
   {
     division: "UUV",
     members: [
-      { name: "Fabian", role: "Sub-Team Lead", imageUrl: "/team/Fabian.jpg" }, //
-      { name: "Aydil", role: "Software", imageUrl: "/team/aydil.jpg" }, //
-      { name: "Sherwin", role: "Software", imageUrl: "/team/sherwin.jpg" }, //
-      { name: "Clifton", role: "Software", imageUrl: "/team/Clifton.jpg" }, //
-      { name: "Yan Shan", role: "Software", imageUrl: "/team/KwokYanShan.png" }, //
+      {
+        name: "Toh Jia Jun, Fabian",
+        role: "Sub-Team Lead",
+        imageUrl: "/team/Fabian.jpg",
+      }, //
+      {
+        name: "Muhammad Khair Aydil Bin Suandi",
+        role: "Software",
+        imageUrl: "/team/aydil.jpg",
+      }, //
+      {
+        name: "Gatchalian Sherwin II Soberano",
+        role: "Software",
+        imageUrl: "/team/sherwin.jpg",
+      }, //
+      {
+        name: "Zhong Jun'En Clifton",
+        role: "Software",
+        imageUrl: "/team/Clifton.jpg",
+      }, //
+      {
+        name: "Kwok Yan Shan",
+        role: "Software",
+        imageUrl: "/team/KwokYanShan.png",
+      }, //
       {
         name: "Brian Ong Wei Rong ",
         role: "Mechanical",
@@ -110,7 +134,11 @@ export const teamCredits: Array<{
         imageUrl: "/team/NicholasChiang.jpg",
       },
       { name: "Dmitrii Aparin", role: "USV Craft System Developer" },
-      { name: "Peng Cheng Wang", role: "Advisor" },
+      {
+        name: "Peng Cheng Wang",
+        role: "Advisor",
+        imageUrl: "/team/Prof Victor Wang.png",
+      },
     ],
   },
 ];
