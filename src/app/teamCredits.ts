@@ -98,7 +98,7 @@ export const teamCredits: Array<{
   {
     division: "Staff",
     members: [
-      { name: "Yun Mei Ang", role: "Advisor" },
+      { name: "Yun Mei Ang", role: "Advisor", imageUrl: "/team/Elisa Ang.jpg" },
       {
         name: "Voon Ee How",
         role: "Advisor",
