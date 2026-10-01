@@ -2,10 +2,12 @@
 import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { useScroll, motion } from "framer-motion";
+import { useScroll, motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { name: "Platforms", href: "/#platforms" },
+  { name: "Home", href: "/" },
+  { name: "Platforms", href: "/documentation" },
   { name: "Team", href: "/team" },
   { name: "Sponsors", href: "/#sponsor" },
 ];
@@ -86,6 +88,7 @@ export function HeroSection() {
 
 const HeroHeader = () => {
   const [scrolled, setScrolled] = React.useState(false);
+  const [menuOpen, setMenuOpen] = React.useState(false);
   const { scrollYProgress } = useScroll();
 
   React.useEffect(() => {
@@ -94,6 +97,13 @@ const HeroHeader = () => {
     });
     return () => unsubscribe();
   }, [scrollYProgress]);
+
+  React.useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
 
   return (
     <header>
@@ -127,6 +137,7 @@ const HeroHeader = () => {
                 </span>
               </Link>
 
+              {/* Desktop Navigation */}
               <div className="hidden lg:block">
                 <ul className="flex gap-8 text-sm">
                   {navItems.map((item) => (
@@ -141,8 +152,47 @@ const HeroHeader = () => {
                   ))}
                 </ul>
               </div>
+
+              {/* Mobile Navigation */}
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label={menuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={menuOpen}
+                className="-m-2.5 block p-2.5 text-muted-foreground lg:hidden"
+              >
+                {menuOpen ? (
+                  <X className="size-6" />
+                ) : (
+                  <Menu className="size-6" />
+                )}
+              </button>
             </div>
           </motion.div>
+
+          <AnimatePresence>
+            {menuOpen && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                className="lg:hidden overflow-hidden"
+              >
+                <ul className="flex flex-col gap-4 py-4 text-sm">
+                  {navItems.map((item) => (
+                    <li key={item.name}>
+                      <Link
+                        href={item.href}
+                        className="block text-muted-foreground duration-150 hover:text-foreground"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </nav>
     </header>
