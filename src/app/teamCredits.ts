@@ -42,7 +42,7 @@ export const teamCredits: Array<{
       }, //
       {
         name: "Muas Jabar Bin Abdullah",
-        role: "software",
+        role: "Software",
         imageUrl: "/team/Muas.jpeg",
       }, //
       {
