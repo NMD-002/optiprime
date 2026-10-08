@@ -33,8 +33,8 @@ export default function DocumentationPage() {
             src: "/models/uav.glb",
             orientation: "0deg 270deg 0deg",
           },
-          { name: "USV", icon: Ship, src: "/models/usv.glb" },
-          { name: "UUV", icon: Zap, src: "/models/uuv.glb" },
+          { name: "USV", icon: Ship, src: "/models/usv-opt.glb" },
+          { name: "UUV", icon: Zap, src: "/models/uuv-opt.glb" },
         ].map((doc, i) => (
           <div
             key={i}
