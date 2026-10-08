@@ -12,9 +12,20 @@ export default function DocumentationPage() {
         <p className="text-xl text-light-grey/60 uppercase tracking-tight max-w-2xl">
           Complete engineering specs, blueprints, and system architectures.
         </p>
+        <p className="text-lg text-light-grey/80">
+          View our full documentation below:
+        </p>
+        <a
+          href="/asset/TDR_SIT_RX2026.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+        >
+          View PDF
+        </a>
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-soft-white">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 text-soft-white">
         {[
           {
             name: "UAV",
