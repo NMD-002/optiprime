@@ -43,7 +43,7 @@ export const teamCredits: Array<{
       {
         name: "Muas Jabar Bin Abdullah",
         role: "Software",
-        imageUrl: "/team/Muas.jpeg",
+        imageUrl: "/team/Muas.jpg",
       }, //
       {
         name: "Nicholas Wei Jian Chiang",
@@ -81,7 +81,11 @@ export const teamCredits: Array<{
         role: "Software",
         imageUrl: "/team/MatthiasChua.jpg",
       }, //
-      { name: "Dmitrii Aparin", role: "System Developer" }, //
+      {
+        name: "Dmitrii Aparin",
+        role: "System Developer",
+        imageUrl: "/team/Dmitrii.jpg",
+      }, //
     ],
   },
   {
@@ -133,7 +137,11 @@ export const teamCredits: Array<{
         role: "Advisor/Finance",
         imageUrl: "/team/NicholasChiang.jpg",
       },
-      { name: "Dmitrii Aparin", role: "USV Craft System Developer" },
+      {
+        name: "Dmitrii Aparin",
+        role: "USV Craft System Developer",
+        imageUrl: "/team/Dmitrii.jpg",
+      },
       {
         name: "Peng Cheng Wang",
         role: "Advisor",

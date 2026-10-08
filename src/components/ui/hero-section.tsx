@@ -110,8 +110,7 @@ const HeroHeader = () => {
       <nav className="fixed z-50 w-full pt-2">
         <div
           className={cn(
-            "mx-auto max-w-7xl rounded-3xl px-6 transition-all duration-300 lg:px-12",
-            scrolled && "bg-background/60 backdrop-blur-2xl",
+            "mx-auto max-w-7xl rounded-3xl px-6 transition-all duration-300 lg:px-12 bg-background/60 backdrop-blur-2xl",
           )}
         >
           <motion.div
