@@ -22,6 +22,7 @@ import { cn } from "@/lib/utils";
 import SponsorSection from "@/components/Sponsors";
 import { leadership } from "./leadership";
 import { teamCredits } from "./teamCredits";
+import Link from "next/link";
 
 type PlatformKey = "uav" | "usv" | "uuv";
 
@@ -152,7 +153,7 @@ const platforms: Platform[] = [
     tagline: "Surface domain",
     description:
       "High-speed autonomous surface craft for waypoint navigation, dynamic obstacle avoidance, and coordinated multi-agent missions.",
-    image: "/asset/platform-usv.png",
+    image: "/asset/usv.png",
     specs: [
       { label: "Endurance", value: "33 hr" },
       { label: "Range", value: "117 km" },
@@ -258,7 +259,7 @@ const platforms: Platform[] = [
     tagline: "Subsurface domain",
     description:
       "Subsurface platform engineered for deep-water mapping, acoustic telemetry relay, and precision underwater intervention tasks.",
-    image: "/asset/platform-uuv.png",
+    image: "/asset/uuv.png",
     specs: [
       { label: "Dimensions", value: "600 x 600 x 400 mm" },
       { label: "Air weight", value: "~35 kg" },
@@ -519,6 +520,12 @@ export default function HomePage() {
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
               Machine specs and autonomy stack.
             </h2>
+            <Link
+              href={"/documentation"}
+              className="text-sm text-muted-foreground underline cursor-pointer hover:opacity-80 font-medium tracking-tight"
+            >
+              Read More About Each Platform Here {">>>"}
+            </Link>
           </div>
 
           {/* Platform tabs */}
